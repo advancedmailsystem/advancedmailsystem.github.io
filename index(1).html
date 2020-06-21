@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>DPR</title><link rel="shortcut icon" href="index.png" type="image/png" /> 
+
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+</head>
+
+
+<body>
+<header>    
+<center><nav> 
+
+<a href=https://torrentgas.000webhostapp.com/><span> Home </span></a>||
+<a href=stations/Sale_data.php><span>Sales</span></a>||
+<a href="whatsapp.php"><span>New MCV</span></a>
+
+</nav></center>
+<center><h1 style="color:white">DISPENSER SHEET</h1></center>
+</header>
+
+<section>
+<form action="data.php" method="post">
+<input type="reset">
+<p for="st">Station Name:
+
+  <select name="station" required>
+  <option disabled selected value> -- select an option -- </option>
+  <option value="wadia">PH Wadia & Sons - Vadal</option>
+  <option value="mendarda">Prabhat Petroleum - Mendarda</option>
+  <option value="maliya">Shreeji Krupa Petroleum - Maliya</option>
+  <option value="anjaney">Shree Anjaney Petroleum - Timbavadi</option>
+  <option value="visavadar">Shayona Petroleum - Visavadar</option>
+  </select>
+  </p>
+<h3>Dispenser 1</h3>
+<p>1A   :        <input border="10px" type="number" name="1a" step="0.01" id="1a" placeholder="1A reading" required></p>
+<p>1B   :        <input type="number" name="1b" step="0.01" id="1b" placeholder="1B reading" required><br></p>
+<h3>Dispenser 2</h3>
+<p>2A   :          <input type="number" name="2a" step="0.01" id="2a" placeholder="2A reading" required></p>
+<p>2B   :         <input type="number" name="2b" step="0.01" id="2b" placeholder="2B reading" required><br></p>
+
+<h3>Compressor Readings</h3>
+<p>HMR</p><p><input style="width:14%" type="number" name="HMR" id="hmrhh" placeholder="HH" required>&nbsp;:&nbsp;<input style="width:12%" type="number" name="HMRmm" id="hmrmm" placeholder="mm" min="00" max="59" required><br></p>
+<p>KWH</p><p><input type="number" name="KWH" step="0.01" id="kwh" placeholder="KWH" required><br></p>
+<p>Suction/LCV Point MFM</p><p><input type="number" name="Suction" step="0.01" id="suc" placeholder="Suction MFM" required><br></p>
+<p>Discharge</p><p><input type="number" name="Discharge" step="0.01" id="dis" placeholder="Discharge MFM" required><br></p>
+<h3>MCV Readings</h3>
+<p>MCV Pressure</p><p><input type="number" name="Pressure" id="pres" placeholder="Pressure" required><br></p>
+
+
+<center><input type="submit" value="Submit" width="50%" ></center>
+</form>
+
+<br>
+<br>
+
+<br>
+<br>
+</section>
+<footer>
+<div style="color:white;font-size:12px;">&copy;2020 Created By:PrimeKiller</div>
+</footer>
+
+</html>
